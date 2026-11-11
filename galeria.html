@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Galería de fotos | Ecuador: 4 destinos</title>
+  <meta name="description" content="Fotografías del Lago San Pablo, la Laguna de Yahuarcocha, la Cascada de Peguche y el Nevado Cayambe, con filtros por lugar.">
+  <meta name="theme-color" content="#0f3f43">
+  <link rel="icon" type="image/png" href="img/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700;9..144,800&amp;family=Nunito+Sans:wght@400;600;800&amp;display=swap">
+  <link rel="stylesheet" href="css/styles.css">
+</head><body id="inicio">
+  <a class="saltar" href="#contenido">Saltar al contenido</a>
+
+  <header class="cabecera">
+    <div class="contenedor">
+      <a class="marca" href="index.html" aria-label="Ecuador, 4 destinos: ir al inicio">
+        <img src="img/emblema.jpg" alt="" width="62" height="62">
+        <span class="marca-texto"><strong>Ecuador</strong><span>Naturaleza · Cultura · Aventura</span></span>
+      </a>
+
+      <!-- Menú móvil: checkbox + label (sin JavaScript) -->
+      <input type="checkbox" id="menu-check" class="menu-check" aria-label="Abrir o cerrar el menú">
+      <label for="menu-check" class="hamburguesa" aria-hidden="true"><span></span></label>
+
+      <nav class="menu" aria-label="Navegación principal">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="destinos.html">Destinos</a></li>
+        <li><a href="galeria.html" aria-current="page">Galería</a></li>
+        <li><a href="paquetes.html">Paquetes</a></li>
+        <li><a href="itinerarios.html">Itinerarios</a></li>
+        <li><a href="contacto.html" class="menu-cta">Contacto</a></li>
+      </ul>
+      </nav>
+    </div>
+    <div class="franja" aria-hidden="true"></div>
+  </header>
+
+  <main id="contenido">
+    <section class="cabecera-pagina">
+      <div class="contenedor">
+        <span class="sobretitulo">Galería</span>
+        <h1>Mira los Andes antes de llegar</h1>
+        <p>Fotografías organizadas por lugar. Filtra por destino y toca una foto para verla en grande.</p>
+      </div>
+    </section>
+
+    <section class="seccion" id="galeria-fotos" aria-label="Fotografías">
+      <div class="contenedor">
+        <!-- Filtros con radio buttons: el CSS (:checked) muestra u oculta las fotos -->
+        <input type="radio" name="filtro" id="f-todos" class="filtro-radio" checked>
+        <input type="radio" name="filtro" id="f-sp" class="filtro-radio">
+        <input type="radio" name="filtro" id="f-ya" class="filtro-radio">
+        <input type="radio" name="filtro" id="f-pe" class="filtro-radio">
+        <input type="radio" name="filtro" id="f-ca" class="filtro-radio">
+
+        <div class="filtros" role="group" aria-label="Filtrar fotos por destino">
+          <label for="f-todos">Todas</label>
+          <label for="f-sp">Lago San Pablo</label>
+          <label for="f-ya">Yahuarcocha</label>
+          <label for="f-pe">Peguche</label>
+          <label for="f-ca">Nevado Cayambe</label>
+        </div>
+
+        <div class="galeria" id="galeria">
+        <figure class="foto sp">
+          <a href="#foto-1" aria-label="Ampliar: Lago San Pablo">
+            <img src="img/sanpablo-1.jpg" alt="Lago San Pablo con el volcán Imbabura al fondo" width="680" height="382" loading="lazy">
+          </a>
+          <figcaption><strong>Lago San Pablo</strong></figcaption>
+        </figure>
+        <figure class="foto sp">
+          <a href="#foto-2" aria-label="Ampliar: Lago San Pablo al atardecer">
+            <img src="img/sanpablo-2.jpg" alt="Muelle del lago San Pablo al atardecer" width="680" height="413" loading="lazy">
+          </a>
+          <figcaption><strong>Lago San Pablo al atardecer</strong></figcaption>
+        </figure>
+        <figure class="foto ya">
+          <a href="#foto-3" aria-label="Ampliar: Yahuarcocha desde el aire">
+            <img src="img/yahuarcocha-1.jpg" alt="Vista aérea de la laguna de Yahuarcocha y la ciudad de Ibarra" width="547" height="365" loading="lazy">
+          </a>
+          <figcaption><strong>Yahuarcocha desde el aire</strong></figcaption>
+        </figure>
+        <figure class="foto ya">
+          <a href="#foto-4" aria-label="Ampliar: Orillas de Yahuarcocha">
+            <img src="img/yahuarcocha-2.jpg" alt="Orilla de la laguna de Yahuarcocha con montañas" width="1000" height="1000" loading="lazy">
+          </a>
+          <figcaption><strong>Orillas de Yahuarcocha</strong></figcaption>
+        </figure>
+        <figure class="foto ya">
+          <a href="#foto-5" aria-label="Ampliar: Montaña y nubes doradas">
+            <img src="img/yahuarcocha-3.jpg" alt="Atardecer sobre la montaña junto a Yahuarcocha. Foto: Jonathan Terrán Fotografía" width="736" height="928" loading="lazy">
+          </a>
+          <figcaption><strong>Montaña y nubes doradas</strong></figcaption>
+        </figure>
+        <figure class="foto pe">
+          <a href="#foto-6" aria-label="Ampliar: Puente de Peguche">
+            <img src="img/peguche-1.jpg" alt="Cascada de Peguche con puente de madera" width="653" height="488" loading="lazy">
+          </a>
+          <figcaption><strong>Puente de Peguche</strong></figcaption>
+        </figure>
+        <figure class="foto pe">
+          <a href="#foto-7" aria-label="Ampliar: Frente a la cascada">
+            <img src="img/peguche-2.jpg" alt="Visitantes en el puente frente a la cascada de Peguche" width="1800" height="1200" loading="lazy">
+          </a>
+          <figcaption><strong>Frente a la cascada</strong></figcaption>
+        </figure>
+        <figure class="foto pe">
+          <a href="#foto-8" aria-label="Ampliar: Sendero a la cascada">
+            <img src="img/peguche-3.jpg" alt="Persona frente a la cascada de Peguche entre neblina y bosque" width="900" height="1350" loading="lazy">
+          </a>
+          <figcaption><strong>Sendero a la cascada</strong></figcaption>
+        </figure>
+        <figure class="foto ca">
+          <a href="#foto-9" aria-label="Ampliar: El glaciar entre la niebla">
+            <img src="img/cayambe-1.jpg" alt="Glaciar del Nevado Cayambe sobre un mar de niebla" width="480" height="640" loading="lazy">
+          </a>
+          <figcaption><strong>El glaciar entre la niebla</strong></figcaption>
+        </figure>
+        <figure class="foto ca">
+          <a href="#foto-10" aria-label="Ampliar: Nevado Cayambe">
+            <img src="img/cayambe-2.jpg" alt="Nevado Cayambe visto desde el valle" width="610" height="327" loading="lazy">
+          </a>
+          <figcaption><strong>Nevado Cayambe</strong></figcaption>
+        </figure>
+        <figure class="foto ca">
+          <a href="#foto-11" aria-label="Ampliar: Caminata en el glaciar">
+            <img src="img/cayambe-3.jpg" alt="Excursionista sobre el glaciar del Cayambe" width="678" height="452" loading="lazy">
+          </a>
+          <figcaption><strong>Caminata en el glaciar</strong></figcaption>
+        </figure>
+        </div>
+
+        <!-- Visor ampliado: se abre con :target (sin JavaScript) -->
+      <div class="visor" id="foto-1" role="dialog" aria-label="Lago San Pablo">
+        <a class="visor-fondo" href="#galeria-fotos" tabindex="-1" aria-hidden="true"></a>
+        <a class="cerrar" href="#galeria-fotos">Cerrar ✕</a>
+        <figure>
+          <img src="img/sanpablo-1.jpg" alt="Lago San Pablo con el volcán Imbabura al fondo" loading="lazy">
+          <figcaption>Lago San Pablo · 1 de 11</figcaption>
+        </figure>
+        <nav aria-label="Navegar fotos"><a href="#foto-11">← Anterior</a><a href="#foto-2">Siguiente →</a></nav>
+      </div>
+      <div class="visor" id="foto-2" role="dialog" aria-label="Lago San Pablo al atardecer">
+        <a class="visor-fondo" href="#galeria-fotos" tabindex="-1" aria-hidden="true"></a>
+        <a class="cerrar" href="#galeria-fotos">Cerrar ✕</a>
+        <figure>
+          <img src="img/sanpablo-2.jpg" alt="Muelle del lago San Pablo al atardecer" loading="lazy">
+          <figcaption>Lago San Pablo al atardecer · 2 de 11</figcaption>
+        </figure>
+        <nav aria-label="Navegar fotos"><a href="#foto-1">← Anterior</a><a href="#foto-3">Siguiente →</a></nav>
+      </div>
+      <div class="visor" id="foto-3" role="dialog" aria-label="Yahuarcocha desde el aire">
+        <a class="visor-fondo" href="#galeria-fotos" tabindex="-1" aria-hidden="true"></a>
+        <a class="cerrar" href="#galeria-fotos">Cerrar ✕</a>
+        <figure>
+          <img src="img/yahuarcocha-1.jpg" alt="Vista aérea de la laguna de Yahuarcocha y la ciudad de Ibarra" loading="lazy">
+          <figcaption>Yahuarcocha desde el aire · 3 de 11</figcaption>
+        </figure>
+        <nav aria-label="Navegar fotos"><a href="#foto-2">← Anterior</a><a href="#foto-4">Siguiente →</a></nav>
+      </div>
+      <div class="visor" id="foto-4" role="dialog" aria-label="Orillas de Yahuarcocha">
+        <a class="visor-fondo" href="#galeria-fotos" tabindex="-1" aria-hidden="true"></a>
+        <a class="cerrar" href="#galeria-fotos">Cerrar ✕</a>
+        <figure>
+          <img src="img/yahuarcocha-2.jpg" alt="Orilla de la laguna de Yahuarcocha con montañas" loading="lazy">
+          <figcaption>Orillas de Yahuarcocha · 4 de 11</figcaption>
+        </figure>
+        <nav aria-label="Navegar fotos"><a href="#foto-3">← Anterior</a><a href="#foto-5">Siguiente →</a></nav>
+      </div>
+      <div class="visor" id="foto-5" role="dialog" aria-label="Montaña y nubes doradas">
+        <a class="visor-fondo" href="#galeria-fotos" tabindex="-1" aria-hidden="true"></a>
+        <a class="cerrar" href="#galeria-fotos">Cerrar ✕</a>
+        <figure>
+          <img src="img/yahuarcocha-3.jpg" alt="Atardecer sobre la montaña junto a Yahuarcocha. Foto: Jonathan Terrán Fotografía" loading="lazy">
+          <figcaption>Montaña y nubes doradas · 5 de 11</figcaption>
+        </figure>
+        <nav aria-label="Navegar fotos"><a href="#foto-4">← Anterior</a><a href="#foto-6">Siguiente →</a></nav>
+      </div>
+      <div class="visor" id="foto-6" role="dialog" aria-label="Puente de Peguche">
+        <a class="visor-fondo" href="#galeria-fotos" tabindex="-1" aria-hidden="true"></a>
+        <a class="cerrar" href="#galeria-fotos">Cerrar ✕</a>
+        <figure>
+          <img src="img/peguche-1.jpg" alt="Cascada de Peguche con puente de madera" loading="lazy">
+          <figcaption>Puente de Peguche · 6 de 11</figcaption>
+        </figure>
+        <nav aria-label="Navegar fotos"><a href="#foto-5">← Anterior</a><a href="#foto-7">Siguiente →</a></nav>
+      </div>
+      <div class="visor" id="foto-7" role="dialog" aria-label="Frente a la cascada">
+        <a class="visor-fondo" href="#galeria-fotos" tabindex="-1" aria-hidden="true"></a>
+        <a class="cerrar" href="#galeria-fotos">Cerrar ✕</a>
+        <figure>
+          <img src="img/peguche-2.jpg" alt="Visitantes en el puente frente a la cascada de Peguche" loading="lazy">
+          <figcaption>Frente a la cascada · 7 de 11</figcaption>
+        </figure>
+        <nav aria-label="Navegar fotos"><a href="#foto-6">← Anterior</a><a href="#foto-8">Siguiente →</a></nav>
+      </div>
+      <div class="visor" id="foto-8" role="dialog" aria-label="Sendero a la cascada">
+        <a class="visor-fondo" href="#galeria-fotos" tabindex="-1" aria-hidden="true"></a>
+        <a class="cerrar" href="#galeria-fotos">Cerrar ✕</a>
+        <figure>
+          <img src="img/peguche-3.jpg" alt="Persona frente a la cascada de Peguche entre neblina y bosque" loading="lazy">
+          <figcaption>Sendero a la cascada · 8 de 11</figcaption>
+        </figure>
+        <nav aria-label="Navegar fotos"><a href="#foto-7">← Anterior</a><a href="#foto-9">Siguiente →</a></nav>
+      </div>
+      <div class="visor" id="foto-9" role="dialog" aria-label="El glaciar entre la niebla">
+        <a class="visor-fondo" href="#galeria-fotos" tabindex="-1" aria-hidden="true"></a>
+        <a class="cerrar" href="#galeria-fotos">Cerrar ✕</a>
+        <figure>
+          <img src="img/cayambe-1.jpg" alt="Glaciar del Nevado Cayambe sobre un mar de niebla" loading="lazy">
+          <figcaption>El glaciar entre la niebla · 9 de 11</figcaption>
+        </figure>
+        <nav aria-label="Navegar fotos"><a href="#foto-8">← Anterior</a><a href="#foto-10">Siguiente →</a></nav>
+      </div>
+      <div class="visor" id="foto-10" role="dialog" aria-label="Nevado Cayambe">
+        <a class="visor-fondo" href="#galeria-fotos" tabindex="-1" aria-hidden="true"></a>
+        <a class="cerrar" href="#galeria-fotos">Cerrar ✕</a>
+        <figure>
+          <img src="img/cayambe-2.jpg" alt="Nevado Cayambe visto desde el valle" loading="lazy">
+          <figcaption>Nevado Cayambe · 10 de 11</figcaption>
+        </figure>
+        <nav aria-label="Navegar fotos"><a href="#foto-9">← Anterior</a><a href="#foto-11">Siguiente →</a></nav>
+      </div>
+      <div class="visor" id="foto-11" role="dialog" aria-label="Caminata en el glaciar">
+        <a class="visor-fondo" href="#galeria-fotos" tabindex="-1" aria-hidden="true"></a>
+        <a class="cerrar" href="#galeria-fotos">Cerrar ✕</a>
+        <figure>
+          <img src="img/cayambe-3.jpg" alt="Excursionista sobre el glaciar del Cayambe" loading="lazy">
+          <figcaption>Caminata en el glaciar · 11 de 11</figcaption>
+        </figure>
+        <nav aria-label="Navegar fotos"><a href="#foto-10">← Anterior</a><a href="#foto-1">Siguiente →</a></nav>
+      </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <div class="franja" aria-hidden="true" style="margin-top:-3rem;margin-bottom:3rem"></div>
+    <div class="contenedor">
+      <div class="pie-grid">
+        <div>
+          <div class="pie-logo">
+            <img src="img/emblema.jpg" alt="" width="70" height="70">
+            <strong>Ecuador<br><small style="font-family:var(--f-texto);font-size:.8rem;font-weight:600;color:#a9c7c2">4 destinos, una sola experiencia</small></strong>
+          </div>
+          <p>Sitio turístico sobre Imbabura y Pichincha: lagos, cascadas y montañas de los Andes ecuatorianos.</p>
+        </div>
+        <div>
+          <h2>Explora</h2>
+          <ul>
+            <li><a href="destinos.html">Destinos turísticos</a></li>
+            <li><a href="galeria.html">Galería de fotos</a></li>
+            <li><a href="paquetes.html">Paquetes</a></li>
+            <li><a href="itinerarios.html">Itinerarios</a></li>
+            <li><a href="contacto.html">Formulario de consultas</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2>Destinos</h2>
+          <ul>
+            <li><a href="destinos.html#san-pablo">Lago San Pablo</a></li>
+            <li><a href="destinos.html#yahuarcocha">Laguna de Yahuarcocha</a></li>
+            <li><a href="destinos.html#peguche">Cascada de Peguche</a></li>
+            <li><a href="destinos.html#cayambe">Nevado Cayambe</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="pie-legal">
+       <p>Para ponerte en contancto con un administrador llama a los siguientes numeros: 0998199652 - 0959220875 </p>
+        <p>Las leyendas se presentan como tradición oral: sus versiones varían entre comunidades. Precios, horarios, accesos y servicios son referenciales y deben confirmarse antes del viaje.</p>
+        <p>Fotografías Capturadas por: Jonathan Terrán - Fotografía de Vida.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
