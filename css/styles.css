@@ -495,3 +495,34 @@ form.consulta legend { font-family: var(--f-titulo); font-weight: 700; font-size
   .cabecera, .franja, .pie, .hamburguesa { display: none; }
   body { background: #fff; }
 }
+
+.faq-paquetes {
+  background: #eaf2ef;
+}
+
+.faq-paquetes details {
+  margin-top: 0.75rem;
+  border: 1px solid #c6d8d4;
+  border-radius: var(--radio);
+  background: var(--blanco);
+}
+
+.faq-paquetes summary {
+  padding: 1rem 1.2rem;
+  color: var(--petroleo);
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.faq-paquetes summary:hover {
+  text-decoration: underline;
+}
+
+.faq-paquetes details[open] {
+  border-color: var(--bosque);
+}
+
+.faq-paquetes details p {
+  margin: 0;
+  padding: 0 1.2rem 1rem;
+}
