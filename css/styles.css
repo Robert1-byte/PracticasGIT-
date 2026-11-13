@@ -460,7 +460,7 @@ feat/mapas-destinos
 .destino-mapa a:focus-visible {
   outline: 2px solid currentColor;
   outline-offset: 4px;
-=======
+}
 .faq-paquetes {
   background: #eaf2ef;
 }
@@ -490,5 +490,5 @@ feat/mapas-destinos
 .faq-paquetes details p {
   margin: 0;
   padding: 0 1.2rem 1rem;
-  main
+  
 }
