@@ -11,7 +11,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700;9..144,800&amp;family=Nunito+Sans:wght@400;600;800&amp;display=swap">
   <link rel="stylesheet" href="css/styles.css">
-</head><body id="inicio">
+</head>
+<body id="inicio">
   <a class="saltar" href="#contenido">Saltar al contenido</a>
 
   <header class="cabecera">
@@ -21,19 +22,18 @@
         <span class="marca-texto"><strong>Ecuador</strong><span>Naturaleza · Cultura · Aventura</span></span>
       </a>
 
-      <!-- Menú-->
       <input type="checkbox" id="menu-check" class="menu-check" aria-label="Abrir o cerrar el menú">
       <label for="menu-check" class="hamburguesa" aria-hidden="true"><span></span></label>
 
       <nav class="menu" aria-label="Navegación principal">
-      <ul>
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="destinos.html" aria-current="page">Destinos</a></li>
-        <li><a href="galeria.html">Galería</a></li>
-        <li><a href="paquetes.html">Paquetes</a></li>
-        <li><a href="itinerarios.html">Itinerarios</a></li>
-        <li><a href="contacto.html" class="menu-cta">Contacto</a></li>
-      </ul>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="destinos.html" aria-current="page">Destinos</a></li>
+          <li><a href="galeria.html">Galería</a></li>
+          <li><a href="paquetes.html">Paquetes</a></li>
+          <li><a href="itinerarios.html">Itinerarios</a></li>
+          <li><a href="contacto.html" class="menu-cta">Contacto</a></li>
+        </ul>
       </nav>
     </div>
     <div class="franja" aria-hidden="true"></div>
@@ -58,9 +58,9 @@
           <span class="sobretitulo">Destino 1 · Imbabura</span>
           <h2 id="h-san-pablo">Lago San Pablo</h2>
           <ul class="destino-datos">
-          <li>Provincia de Imbabura</li>
-          <li>Al sur de Otavalo</li>
-          <li>Volcán Imbabura</li>
+            <li>Provincia de Imbabura</li>
+            <li>Al sur de Otavalo</li>
+            <li>Volcán Imbabura</li>
           </ul>
           <p class="lead">Es un lago de origen volcánico rodeado de montañas, comunidades indígenas y paisajes andinos. Es un lugar popular para disfrutar de la naturaleza, tomar fotografías y realizar actividades recreativas en sus alrededores.</p>
           <dl class="ficha">
@@ -69,6 +69,17 @@
             <div><dt>Servicios y actividades</dt><dd>Restaurantes, alojamientos rurales y espacios para pasear. Según el establecimiento y la temporada: paseos en bote, actividades junto al agua, fotografía y visitas a comunidades cercanas.</dd></div>
             <div class="alerta"><dt>Recomendaciones</dt><dd>Llevar abrigo, protegerse del sol y consultar previamente disponibilidad, precios y horarios de las actividades acuáticas.</dd></div>
           </dl>
+          <div class="destino-mapa">
+            <iframe
+              title="Mapa del Lago San Pablo"
+              src="https://maps.google.com/maps?q=Lago+San+Pablo%2C+Otavalo%2C+Ecuador&amp;output=embed"
+              height="280"
+              loading="lazy"
+              allowfullscreen></iframe>
+            <a href="https://www.google.com/maps/search/?api=1&amp;query=Lago+San+Pablo%2C+Otavalo%2C+Ecuador">
+              Ver Lago San Pablo en Google Maps
+            </a>
+          </div>
         </div>
       </div>
     </article>
@@ -84,9 +95,9 @@
           <span class="sobretitulo">Destino 2 · Imbabura</span>
           <h2 id="h-yahuarcocha">Laguna de Yahuarcocha</h2>
           <ul class="destino-datos">
-          <li>Provincia de Imbabura</li>
-          <li>Noreste de Ibarra</li>
-          <li>Autódromo José Tobar Tobar</li>
+            <li>Provincia de Imbabura</li>
+            <li>Noreste de Ibarra</li>
+            <li>Autódromo José Tobar Tobar</li>
           </ul>
           <p class="lead">Yahuarcocha es una laguna andina conocida por su paisaje y su cercanía a Ibarra. Su nombre suele traducirse del kichwa como “lago de sangre” y se relaciona tradicionalmente con relatos sobre enfrentamientos ocurridos en la región antes de la conquista española.</p>
           <dl class="ficha">
@@ -95,6 +106,17 @@
             <div><dt>Servicios y actividades</dt><dd>Restaurantes y puestos de comida, zonas para contemplar el paisaje y espacios para caminar o andar en bicicleta. Cerca se encuentra el Autódromo Internacional José Tobar Tobar, donde se realizan eventos según calendario.</dd></div>
             <div class="alerta"><dt>Recomendaciones</dt><dd>Confirmar si hay eventos o restricciones antes de visitar el autódromo, respetar las zonas señalizadas y evitar dejar basura en las orillas.</dd></div>
           </dl>
+          <div class="destino-mapa">
+            <iframe
+              title="Mapa de la Laguna de Yahuarcocha"
+              src="https://maps.google.com/maps?q=Laguna+de+Yahuarcocha%2C+Ibarra%2C+Ecuador&amp;output=embed"
+              height="280"
+              loading="lazy"
+              allowfullscreen></iframe>
+            <a href="https://www.google.com/maps/search/?api=1&amp;query=Laguna+de+Yahuarcocha%2C+Ibarra%2C+Ecuador">
+              Ver Laguna de Yahuarcocha en Google Maps
+            </a>
+          </div>
         </div>
       </div>
     </article>
@@ -110,9 +132,9 @@
           <span class="sobretitulo">Destino 3 · Imbabura</span>
           <h2 id="h-peguche">Cascada de Peguche</h2>
           <ul class="destino-datos">
-          <li>Provincia de Imbabura</li>
-          <li>Cerca de Otavalo</li>
-          <li>Senderos y bosque</li>
+            <li>Provincia de Imbabura</li>
+            <li>Cerca de Otavalo</li>
+            <li>Senderos y bosque</li>
           </ul>
           <p class="lead">Es una caída de agua rodeada de vegetación andina y senderos. El lugar tiene importancia natural y cultural para comunidades indígenas de la zona, y es conocido por sus paisajes y su ambiente tranquilo.</p>
           <dl class="ficha">
@@ -121,6 +143,17 @@
             <div><dt>Servicios y actividades</dt><dd>Senderos y espacios para recorrer el bosque y observar la cascada. En Otavalo y sus alrededores hay restaurantes, mercados de artesanías y alojamientos. La disponibilidad de guías u otros servicios puede variar.</dd></div>
             <div class="alerta"><dt>Recomendaciones</dt><dd>Usar calzado con buena suela, caminar por los senderos habilitados y no ingresar a zonas resbaladizas o restringidas. Respetar las ceremonias y costumbres de la comunidad.</dd></div>
           </dl>
+          <div class="destino-mapa">
+            <iframe
+              title="Mapa de la Cascada de Peguche"
+              src="https://maps.google.com/maps?q=Cascada+de+Peguche%2C+Otavalo%2C+Ecuador&amp;output=embed"
+              height="280"
+              loading="lazy"
+              allowfullscreen></iframe>
+            <a href="https://www.google.com/maps/search/?api=1&amp;query=Cascada+de+Peguche%2C+Otavalo%2C+Ecuador">
+              Ver Cascada de Peguche en Google Maps
+            </a>
+          </div>
         </div>
       </div>
     </article>
@@ -136,9 +169,9 @@
           <span class="sobretitulo">Destino 4 · Pichincha</span>
           <h2 id="h-cayambe">Nevado Cayambe</h2>
           <ul class="destino-datos">
-          <li>Provincia de Pichincha</li>
-          <li>Parque Nacional Cayambe-Coca</li>
-          <li>≈ 5.790 m s. n. m.</li>
+            <li>Provincia de Pichincha</li>
+            <li>Parque Nacional Cayambe-Coca</li>
+            <li>≈ 5.790 m s. n. m.</li>
           </ul>
           <p class="lead">El Cayambe es un volcán de los Andes con una cumbre de aproximadamente 5.790 metros sobre el nivel del mar. Destaca por sus glaciares, sus paisajes de alta montaña y su importancia como fuente de agua para los ecosistemas y las poblaciones cercanas.</p>
           <dl class="ficha">
@@ -147,6 +180,17 @@
             <div><dt>Servicios y actividades</dt><dd>En Cayambe y comunidades cercanas hay restaurantes, alojamientos y establecimientos que ofrecen los tradicionales bizcochos. Se pueden hacer recorridos de naturaleza y fotografía; el ascenso de montaña requiere planificación especializada y depende de las condiciones y reglas de acceso.</dd></div>
             <div class="alerta"><dt>Recomendaciones</dt><dd>Llevar ropa térmica e impermeable, protección solar y agua. La altura puede provocar mal de montaña. Para acercarse al glaciar o intentar la cumbre se necesita experiencia, equipo técnico, aclimatación y guía profesional. Verificar el estado de las rutas y el clima.</dd></div>
           </dl>
+          <div class="destino-mapa">
+            <iframe
+              title="Mapa del Nevado Cayambe"
+              src="https://maps.google.com/maps?q=Volc%C3%A1n+Cayambe%2C+Ecuador&amp;output=embed"
+              height="280"
+              loading="lazy"
+              allowfullscreen></iframe>
+            <a href="https://www.google.com/maps/search/?api=1&amp;query=Volc%C3%A1n+Cayambe%2C+Ecuador">
+              Ver Nevado Cayambe en Google Maps
+            </a>
+          </div>
         </div>
       </div>
     </article>
@@ -199,9 +243,9 @@
         </div>
       </div>
       <div class="pie-legal">
-        <p>Para ponerte en contancto con un administrador llama a los siguientes nuneros: 0998199652 - 0959220875 </p>
+        <p>Para ponerte en contacto con un administrador llama a los siguientes números: 0998199652 - 0959220875</p>
         <p>Las leyendas se presentan como tradición oral: sus versiones varían entre comunidades. Precios, horarios, accesos y servicios son referenciales y deben confirmarse antes del viaje.</p>
-        <p>Fotografías Capturadas por: Jonathan Terrán - Fotografía de Vida.</p>
+        <p>Fotografías capturadas por: Jonathan Terrán - Fotografía de Vida.</p>
       </div>
     </div>
   </footer>
